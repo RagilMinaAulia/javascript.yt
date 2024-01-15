@@ -7,11 +7,32 @@ let nilai = [
 ];
 
 let nama = ["budi", "titi", "andi", "reni"];
-nama.push("ani", "roma");
+//nama.push("ani", "roma");
 // console.log(nama.pop());
 // console.log(nama.shift());
-nama.unshift("gigi", "aja");
+//nama.unshift("gigi", "aja");
+let mapel = ["ipa", "mat", "bahasa"];
+// console.log(nama.concat(mapel));
+console.log(nama.concat(["ips", "pkn", "sejarah"]));
 //console.log(nilai[0].nama);
 //console.log(nama.splice(3,4));
-console.log(nama.slice(0, 3));
-console.log(nama);
+//console.log(nama.slice(0, 3));
+//console.log(nama);
+
+// nama.forEach(function (a) {
+//   console.log(a);
+// });
+
+// for (let index = 0; index < nama.length; index++) {
+//   console.log(nama[index]);
+// };
+
+// nama.forEach(a => console.log(a));
+
+nilai.filter(function (a) {
+  if (a.ipa > 80) {
+    console.log(a.nama);
+  }
+});
+
+nilai.filter((a) => (a.ipa > 80 && a.mat > 80 ? console.log(a.nama) : null));
