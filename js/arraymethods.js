@@ -13,7 +13,7 @@ let nama = ["budi", "titi", "andi", "reni"];
 //nama.unshift("gigi", "aja");
 let mapel = ["ipa", "mat", "bahasa"];
 // console.log(nama.concat(mapel));
-console.log(nama.concat(["ips", "pkn", "sejarah"]));
+// console.log(nama.concat(["ips", "pkn", "sejarah"]));
 //console.log(nilai[0].nama);
 //console.log(nama.splice(3,4));
 //console.log(nama.slice(0, 3));
@@ -29,10 +29,26 @@ console.log(nama.concat(["ips", "pkn", "sejarah"]));
 
 // nama.forEach(a => console.log(a));
 
-nilai.filter(function (a) {
-  if (a.ipa > 80) {
-    console.log(a.nama);
-  }
-});
+// nilai.filter(function (a) {
+//   if (a.ipa > 80) {
+//     console.log(a.nama);
+//   }
+// });
 
-nilai.filter((a) => (a.ipa > 80 && a.mat > 80 ? console.log(a.nama) : null));
+// nilai.filter((a) => (a.ipa > 80 && a.mat > 80 ? console.log(a.nama) : null));
+
+// let murid=nilai.map(function (a) {
+//   return a.nama;
+// });
+
+// let murid=nilai.map(a => [a.nama, a.ipa, a.bahasa]);
+// console.log(murid);
+
+// mapel.sort();
+// console.log(mapel);
+
+// let hasil= nilai.reduce(function (a, b) {
+//   return (a = a + b.ipa);
+// }, 0);
+let hasil = nilai.reduce((a,b) => (a += b.bahasa), 0);
+console.log(hasil);
